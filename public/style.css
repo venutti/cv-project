@@ -1,4 +1,3 @@
-
 .icon-button {
   cursor: pointer;
   font-size: 24px;
@@ -93,4 +92,28 @@ body {
 }
 .cv-preview .info p {
   margin: 0;
+}
+.cv-preview .preview-subtitle {
+  border-bottom: 3px solid black;
+  margin-bottom: 1rem;
+}
+.cv-preview .education-info,
+.cv-preview .experience-info {
+  padding: 2rem;
+  background-color: #ffffff;
+  color: black;
+}
+.item-preview {
+  margin-bottom: 1rem;
+}
+.item-preview span {
+  opacity: 0.6;
+}
+.item-preview p {
+  margin: 0;
+  display: inline-block;
+  margin-right: 1rem;
+}
+.cv-preview .experience-info {
+  padding-top: 0;
 }

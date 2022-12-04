@@ -2,37 +2,7 @@ import React from "react";
 import uniqid from "uniqid";
 import CVPreview from "./CVPreview/CVPreview";
 import CVForm from "./CVForm/CVForm";
-
-const cvEmpty = {
-  personalData: {
-    firstName: "",
-    lastName: "",
-    title: "",
-    address: "",
-    phoneNumber: "",
-    email: "",
-  },
-  experienceData: [
-    {
-      id: uniqid(),
-      position: "",
-      company: "",
-      city: "",
-      from: "",
-      to: "",
-    },
-  ],
-  educationData: [
-    {
-      id: uniqid(),
-      universityName: "",
-      city: "",
-      degree: "",
-      from: "",
-      to: "",
-    },
-  ],
-};
+import { cvEmpty } from "./assets/cvSamples";
 
 class Main extends React.Component {
   constructor(props) {
