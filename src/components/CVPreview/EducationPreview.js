@@ -1,21 +1,19 @@
 import React from "react";
 import EducationItemPreview from "./EducationItemPreview";
 
-class EducationPreview extends React.Component {
-  renderEducationItemPreview(educationData) {
+function EducationPreview(props) {
+  const renderEducationItemPreview = (educationData) => {
     return educationData.map((education) => (
       <EducationItemPreview key={education.id} educationData={education} />
     ));
-  }
+  };
 
-  render() {
-    return (
-      <div className="education-info">
-        <h3 className="preview-subtitle">Educación</h3>
-        {this.renderEducationItemPreview(this.props.educationData)}
-      </div>
-    );
-  }
+  return (
+    <div className="education-info">
+      <h3 className="preview-subtitle">Educación</h3>
+      {renderEducationItemPreview(props.educationData)}
+    </div>
+  );
 }
 
 export default EducationPreview;
